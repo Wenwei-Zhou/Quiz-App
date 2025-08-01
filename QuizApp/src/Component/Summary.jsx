@@ -18,6 +18,8 @@ export default function Summary({ userAnswers }) {
 
     const wrongAnswersShare = 100 - skippedAnswersShare - correctAnswersShare;
 
+    // 计算成绩
+
     return (
             <div id="summary">
                 <img src={quizComplete} alt="complete" />
@@ -45,7 +47,7 @@ export default function Summary({ userAnswers }) {
                         } else if (answer === Question[index].answers[0]) {
                             cssClass += ' correct';
                         } else {
-                            cssClass += ' wrong';
+                            cssClass += ' wrong'; // //空格是确保和cssClass不会站在一起。（className = 'user-answer wrong'）
                         }
                         return (
                             <li key={index}>
