@@ -22,8 +22,8 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      working-directory: ./Quiz_App
+      working-directory: ./QuizApp
 
     - name: Build project
       run: npm run build
-      working-directory: ./Quiz_App
+      working-directory: ./QuizApp
